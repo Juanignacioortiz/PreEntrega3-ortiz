@@ -1,0 +1,50 @@
+footer {
+    background-color: $color-black;
+    color: $color-terciary;
+    padding: 20px;
+}
+
+.containerfooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.redes-sociales img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.3);
+}
+
+.contacto {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.contacto h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contacto p {
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .containerfooter {
+        flex-direction: column;
+    }
+
+    .redes-sociales {
+        margin-bottom: 20px;
+    }
+}
