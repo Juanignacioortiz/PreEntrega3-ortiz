@@ -1,0 +1,16 @@
+@mixin border {
+border-radius: 10px;
+border: solid $color-primary;
+}
+
+.col img {
+    @include border()
+    }
+    
+.images img{
+    @include border()
+    }
+
+.carousel img {
+    @include border()
+    }
