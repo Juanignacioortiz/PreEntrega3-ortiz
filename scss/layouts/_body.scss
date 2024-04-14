@@ -10,34 +10,36 @@
 
 
 .carousel-container {
-    max-width: 75%;
-    margin: 0 auto;
+    max-width: 100%;
     display: flex;
+    align-items: center; 
     flex-direction: column;
-    align-items: center;
-    .text-product {
-        background-color: $color-secondary;
-        border-radius: 50px;
-        margin: 50px;
-        border: #af3e40 4px solid;
-        width: 100%;
-        height: auto;
-        text-align:center;
-        padding: 30px;
+}
+
+.text-product {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color-secondary;
+    border-radius: 50px;
+    margin: 50px;
+    border: $color-primary 4px solid;
+    text-align:center;
+    padding: 30px;
+    font-size: 2vmin;
+    font-family: $font-primary;
+    font-weight: bold;
+
     
-        @media screen and (max-width: 768px) {
-            background-color: $color-secondary;
-            border-radius: 50px;
-            margin: 50px;
-            border: #af3e40 4px solid;
-            width: 100%;
-            height: 100%;
-            font-size: 4vmin;}
-    }
+
+
+    @media screen and (max-width: 768px) {
+        font-size: 3.5vmin;}
 }
 
 
+
 .carousel {
+    width: 80%;
     display: flex;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
@@ -53,10 +55,6 @@
         justify-content: space-between;
         margin-top: 10px;
     }
-    @media screen and (max-width: 768px)  {
-            width: 400px;
-            height: auto;
-    }
 }
 
 
@@ -64,18 +62,23 @@
     cursor: pointer;
     padding: 5px 10px;
     margin: 0 5px;
-    background-color: #333;
+    background-color: $color-primary;
     color: $color-terciary;
     border: none;
     border-radius: 5px;
+    margin: 10px;
 }
 
 h2 {
     text-align: center;
+    font-weight: bold;
+
 }
 
 h1 {
     text-align: center;
+    font-weight: bold;
+
 }
 
 /* body faq */
@@ -89,6 +92,8 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 50px;
     border-radius: 8px;
+        font-weight: bold;
+
     .faq-item {
         margin-bottom: 20px;
     }
@@ -106,6 +111,7 @@ h1 {
     padding: 50px;
     font-size: 16px;
     border-bottom: 4px solid $color-primary;
+    font-weight: bold;
     
 }
 
@@ -121,6 +127,8 @@ h1 {
 
 .answer.show {
     display: block;
+    font-weight: bold;
+
 }
 
 
@@ -142,16 +150,20 @@ h1 {
     font-size: 7vmin;
     color: $color-quaternary;
     margin-top: 60px;
+    font-weight: bold;
     @media (max-width: 768px) {
-        font-size: 5vmin;
+        font-size: 8vmin;
+
 }}
 
 .sub-title{    
-    color: #af3e40;
+    color: $color-primary;
     font-size: 5vmin;
     margin-top: 50px;
-    @media (max-width: 768px) {
-        font-size: 5vmin;
+    font-weight: bold;
+
+        @media (max-width: 768px) {
+        font-size: 6vmin;
 }}
 
 
@@ -165,8 +177,10 @@ h1 {
     margin-bottom: 100px;
     margin-top: 100px;
     font-family: $font-primary;
+    font-weight: bold;
     @media (max-width: 600px) {
         margin: 10px;
         padding: 10px;
+        
     }
 }

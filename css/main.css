@@ -105,12 +105,15 @@
   display: flex;
   align-content: center;
   text-align: center;
+  font-weight: bold;
 }
 
 .somos {
   background-color: #ffffff;
   border-radius: 50px;
   opacity: 85%;
+  padding: 30px;
+  font-weight: bold;
 }
 
 .quienes-content {
@@ -127,15 +130,15 @@
 }
 .quienes-content p {
   color: rgb(0, 0, 0);
-  font-size: 3vmin;
+  font-size: 1rem;
 }
 .quienes-content .line {
   margin-bottom: 50px;
 }
 
 .grid-container {
-  width: 95%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -183,35 +186,33 @@
 }
 
 .carousel-container {
-  max-width: 75%;
-  margin: 0 auto;
+  max-width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
-.carousel-container .text-product {
+
+.text-product {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #feedd9;
   border-radius: 50px;
   margin: 50px;
   border: #af3e40 4px solid;
-  width: 100%;
-  height: auto;
   text-align: center;
   padding: 30px;
+  font-size: 2vmin;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
 }
 @media screen and (max-width: 768px) {
-  .carousel-container .text-product {
-    background-color: #feedd9;
-    border-radius: 50px;
-    margin: 50px;
-    border: #af3e40 4px solid;
-    width: 100%;
-    height: 100%;
-    font-size: 4vmin;
+  .text-product {
+    font-size: 3.5vmin;
   }
 }
 
 .carousel {
+  width: 80%;
   display: flex;
   overflow-x: hidden;
   scroll-snap-type: x mandatory;
@@ -228,29 +229,26 @@
   justify-content: space-between;
   margin-top: 10px;
 }
-@media screen and (max-width: 768px) {
-  .carousel {
-    width: 400px;
-    height: auto;
-  }
-}
 
 .carousel-controls button {
   cursor: pointer;
   padding: 5px 10px;
   margin: 0 5px;
-  background-color: #333;
+  background-color: #af3e40;
   color: #ffffff;
   border: none;
   border-radius: 5px;
+  margin: 10px;
 }
 
 h2 {
   text-align: center;
+  font-weight: bold;
 }
 
 h1 {
   text-align: center;
+  font-weight: bold;
 }
 
 /* body faq */
@@ -263,6 +261,7 @@ h1 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 50px;
   border-radius: 8px;
+  font-weight: bold;
 }
 .faq-container .faq-item {
   margin-bottom: 20px;
@@ -278,6 +277,7 @@ h1 {
   padding: 50px;
   font-size: 16px;
   border-bottom: 4px solid #af3e40;
+  font-weight: bold;
 }
 
 .answer {
@@ -290,6 +290,7 @@ h1 {
 
 .answer.show {
   display: block;
+  font-weight: bold;
 }
 
 .button-formulary {
@@ -309,10 +310,11 @@ h1 {
   font-size: 7vmin;
   color: #251c5b;
   margin-top: 60px;
+  font-weight: bold;
 }
 @media (max-width: 768px) {
   .title {
-    font-size: 5vmin;
+    font-size: 8vmin;
   }
 }
 
@@ -320,10 +322,11 @@ h1 {
   color: #af3e40;
   font-size: 5vmin;
   margin-top: 50px;
+  font-weight: bold;
 }
 @media (max-width: 768px) {
   .sub-title {
-    font-size: 5vmin;
+    font-size: 6vmin;
   }
 }
 
@@ -337,6 +340,7 @@ h1 {
   margin-bottom: 100px;
   margin-top: 100px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
 }
 @media (max-width: 600px) {
   .container {
